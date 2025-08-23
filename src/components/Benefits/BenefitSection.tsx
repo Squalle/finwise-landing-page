@@ -8,15 +8,12 @@ import SectionTitle from "../SectionTitle";
 import { IBenefit } from "@/types";
 
 interface Props {
-    benefit: IBenefit;
+    benefit: IBenefit & { imageSrc: string; image_alt: string; };
     imageAtRight?: boolean;
 }
 
 const containerVariants: Variants = {
-    offscreen: {
-        opacity: 0,
-        y: 100
-    },
+    offscreen: { opacity: 0, y: 100 },
     onscreen: {
         opacity: 1,
         y: 0,
@@ -31,10 +28,7 @@ const containerVariants: Variants = {
 };
 
 export const childVariants = {
-    offscreen: {
-        opacity: 0,
-        x: -50,
-    },
+    offscreen: { opacity: 0, x: -50 },
     onscreen: {
         opacity: 1,
         x: 0,
@@ -47,7 +41,7 @@ export const childVariants = {
 };
 
 const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
-    const { title, description, imageSrc, bullets } = benefit;
+    const { title, description, imageSrc, bullets, image_alt } = benefit;
 
     return (
         <section className="benefit-section">
@@ -58,28 +52,17 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                 whileInView="onscreen"
                 viewport={{ once: true }}
             >
-                <div
-                    className={clsx("flex flex-wrap items-center w-full max-w-lg", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
-                    
-                >
+                <div className={clsx("flex flex-wrap items-center w-full max-w-lg", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}>
                     <div className="w-full  text-center lg:text-left ">
-                        <motion.div
-                            className="flex flex-col w-full"
-                            variants={childVariants}
-                        >
+                        <motion.div className="flex flex-col w-full" variants={childVariants}>
                             <SectionTitle>
-                                <h3 className="lg:max-w-2xl">
-                                    {title}
-                                </h3>
+                                <h3 className="lg:max-w-2xl">{title}</h3>
                             </SectionTitle>
-
-                            <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-foreground-accent">
-                                {description}
-                            </p>
+                            <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-foreground-accent">{description}</p>
                         </motion.div>
-
                         <div className="mx-auto lg:ml-0 w-full">
                             {bullets.map((item, index) => (
+                                // ✅ Correction : Passe les props une par une au composant enfant.
                                 <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} />
                             ))}
                         </div>
@@ -88,7 +71,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
 
                 <div className={clsx("mt-5 lg:mt-0", { "lg:order-2": imageAtRight })}>
                     <div className={clsx("w-fit flex", { "justify-start": imageAtRight, "justify-end": !imageAtRight })}>
-                        <Image src={imageSrc} alt="title" width="384" height="762" quality={100} className="lg:ml-0" />
+                        <Image src={imageSrc} alt={image_alt} width="384" height="762" quality={100} className="lg:ml-0" />
                     </div>
                 </div>
             </motion.div>

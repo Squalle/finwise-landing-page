@@ -1,9 +1,15 @@
+"use client"
+
 import React from 'react'
 import clsx from 'clsx'
+import { useTranslations } from 'next-intl';
 
 import { ctaDetails } from '@/data/cta'
 
 const PlayStoreButton = ({ dark }: { dark?: boolean }) => {
+    // Récupère les traductions pour le bouton du Play Store
+    const t = useTranslations('common.play_store_button');
+
     return (
         <a href={ctaDetails.googlePlayUrl}>
             <button
@@ -23,11 +29,11 @@ const PlayStoreButton = ({ dark }: { dark?: boolean }) => {
                     </svg>
                 </div>
                 <div>
-                    <div className="text-xs">
-                        GET IT ON
+                    <div className="text-xs uppercase">
+                        {t('prefix')}
                     </div>
                     <div className="-mt-1 font-sans text-xl font-semibold">
-                        Google Play
+                        {t('name')}
                     </div>
                 </div>
             </button>

@@ -1,0 +1,181 @@
+{
+  "testMessage": "¡Está funcionando!",
+  "common": {
+    "header": {
+      "menu": {
+        "features": "Soluciones",
+        "pricing": "Planes",
+        "testimonials": "Testimonios"
+      },
+      "download_button": "Solicitar una demo",
+      "get_started_button": "Prueba gratuita"
+    },
+    "footer": {
+      "subheading": "Procreche: El socio tecnológico que devuelve el tiempo a los profesionales de la primera infancia.",
+      "quickLinks_title": "Enlaces rápidos",
+      "quickLinks": {
+        "features": "Soluciones",
+        "pricing": "Planes",
+        "testimonials": "Testimonios"
+      },
+      "contact_title": "Contáctanos",
+      "copyright_text": "© {year} {siteName}. Todos los derechos reservados.",
+      "made_by_text": "Hecho con ❤️ para los profesionales de la infancia. ",
+      "ui_kit_text": ""
+    },
+    "app_store_button": {
+      "prefix": "Descargar en la",
+      "name": "App Store"
+    },
+    "play_store_button": {
+      "prefix": "DISPONIBLE EN",
+      "name": "Google Play"
+    }
+  },
+  "benefits": {
+    "heading": "Funcionalidades pensadas para ti",
+    "items": [
+      {
+        "title": "Simplifica tu día a día, libera tu tiempo",
+        "description": "Nuestra plataforma centraliza toda tu administración. Adiós al papeleo y la doble entrada de datos, hola a la eficiencia.",
+        "bullets": [
+          {
+            "title": "Gestión de asistencia en un clic",
+            "description": "Los padres informan de las asistencias y ausencias desde su móvil. Los informes se generan automáticamente."
+          },
+          {
+            "title": "Facturación automatizada y pagos online",
+            "description": "Genera y envía tus facturas en segundos. Ofrece a los padres la simplicidad del pago en línea."
+          }
+        ],
+        "image_alt": "Panel de gestión de Procreche"
+      },
+      {
+        "title": "Fortalece el vínculo con los padres",
+        "description": "Crea una relación de confianza inigualable gracias a una comunicación transparente, segura e instantánea.",
+        "bullets": [
+          {
+            "title": "Informes diarios digitales",
+            "description": "Comparte las comidas, siestas y actividades del día en tiempo real a través de un tablón de noticias privado y seguro."
+          },
+          {
+            "title": "Mensajería instantánea y envío de fotos",
+            "description": "Comunícate fácilmente y comparte los momentos preciosos de forma segura, directamente en la aplicación."
+          }
+        ],
+        "image_alt": "Interfaz de comunicación padres-guardería"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "¿Listo/a para transformar la gestión de tu guardería?",
+    "subheading": "Únete a los cientos de directores que ya han elegido la tranquilidad. Solicita tu demostración personalizada.",
+    "get_started_button": "Comenzar mi prueba gratuita de 14 días"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Pregúntanos lo que quieras.",
+    "items": [
+      {
+        "question": "¿Es la aplicación fácil de usar para mi equipo?",
+        "answer": "Totalmente. Procreche ha sido codiseñado con profesionales de la primera infancia. La interfaz es intuitiva y una formación de 30 minutos es suficiente para un manejo completo. Nuestros clientes a menudo se sorprenden de lo rápido que sus equipos la adoptan."
+      },
+      {
+        "question": "¿Está garantizada la seguridad de los datos de los niños?",
+        "answer": "Es nuestra máxima prioridad. Utilizamos un cifrado de nivel bancario y nuestros servidores están alojados en Europa. Sigues siendo el único propietario de tus datos, de acuerdo con el RGPD."
+      },
+      {
+        "question": "¿Tengo que comprometerme a largo plazo?",
+        "answer": "No, nuestras suscripciones son flexibles y sin compromiso de permanencia. Puedes empezar con nuestra prueba gratuita de 14 días, sin necesidad de tarjeta de crédito, y comprobar por ti mismo el valor que aportamos."
+      }
+    ]
+  },
+  "hero": {
+    "heading": "La gestión de guarderías, por fin simplificada.",
+    "subheading": "Libérate de las tareas administrativas. Redescubre el placer de dedicarte a lo esencial: los niños.",
+    "alt_image": "Maqueta de la aplicación Procreche"
+  },
+  "logos": {
+    "trusted_by_text": "Únete a más de {customersCount} guarderías que confían en nosotros a diario"
+  },
+  "metadata": {
+    "title": "Procreche | El Software de Gestión para Guarderías y Escuelas Infantiles",
+    "description": "Simplifica la facturación, la comunicación con los padres, los horarios y el cumplimiento normativo. Ahorra tiempo y mejora la atención con Procreche."
+  },
+  "pricing": {
+    "plans": [
+      {
+        "name": "Esencial",
+        "price": 49,
+        "features": [
+          "Gestión de hasta 20 niños",
+          "Informes diarios",
+          "Mensajería con padres",
+          "Control de asistencia"
+        ]
+      },
+      {
+        "name": "Profesional",
+        "price": 89,
+        "features": [
+          "Niños ilimitados",
+          "Facturación automatizada",
+          "Pagos online",
+          "Soporte prioritario",
+          "Informes de actividad"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "A medida",
+        "features": [
+          "Todo del plan Profesional, y además:",
+          "Gestión multi-centro",
+          "Exportaciones contables a medida",
+          "Asesoramiento dedicado",
+          "Desarrollos personalizados"
+        ]
+      }
+    ],
+    "custom_price_text": "Contáctanos",
+    "per_month": "/mes",
+    "button_text": "Elegir este plan",
+    "section_features_title": "INCLUIDO EN CADA PLAN",
+    "features_subtitle": "Todo lo del plan anterior, y además..."
+  },
+  "stats": {
+    "items": [
+      {
+        "title": "8 horas/semana ahorradas",
+        "description": "Es el tiempo administrativo promedio que nuestros centros asociados declaran ahorrar cada semana. Tiempo que se reinvierte en los niños y los equipos."
+      },
+      {
+        "title": "98% de satisfacción de los padres",
+        "description": "A las familias les encanta la transparencia y la simplicidad de nuestra aplicación. Un verdadero plus para la imagen y el atractivo de tu centro."
+      },
+      {
+        "title": "Cumplimiento normativo garantizado",
+        "description": "Nuestros informes y exportaciones están diseñados para cumplir con las exigencias normativas, asegurándote una total tranquilidad."
+      }
+    ]
+  },
+  "testimonials": {
+    "items": [
+      {
+        "name": "Sofía García",
+        "role": "Directora, Escuela Infantil 'Pasitos'",
+        "message": "Desde que usamos {siteName}, la comunicación con los padres nunca ha sido tan fluida. Se sienten seguros e involucrados. La herramienta nos ha liberado de una carga mental increíble."
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "role": "Gerente, Guardería 'Mi Nido'",
+        "message": "La facturación era mi pesadilla mensual. Con {siteName}, está resuelta en 15 minutos. Es simple, fiable, y el soporte es súper rápido. No podría volver atrás."
+      },
+      {
+        "name": "Lucía Fernández",
+        "role": "Educadora Infantil",
+        "message": "Tenía miedo de que lo digital reemplazara lo humano, pero es todo lo contrario. Paso menos tiempo con las fichas y más tiempo jugando e interactuando con los niños. Es una verdadera maravilla."
+      }
+    ]
+  }
+}

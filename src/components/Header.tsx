@@ -5,17 +5,37 @@ import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import { FaFingerprint } from 'react-icons/fa';
+import { useTranslations } from 'next-intl'; // Importez le hook de traduction
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
-import { menuItems } from '@/data/menuItems';
+// Supprimez l'importation de '@/data/menuItems' car nous allons le créer dynamiquement
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    // Récupère les traductions pour la section 'header' dans common.json
+    const t = useTranslations('common.header');
+    const tMenu = useTranslations('common.header.menu'); // Scope spécifique pour le menu
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    // Définissez les éléments du menu en utilisant les traductions
+    const menuItems = [
+        {
+            text: tMenu('features'),
+            url: "#features"
+        },
+        {
+            text: tMenu('pricing'),
+            url: "#pricing"
+        },
+        {
+            text: tMenu('testimonials'),
+            url: "#testimonials"
+        }
+    ];
 
     return (
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
@@ -40,7 +60,8 @@ const Header: React.FC = () => {
                         ))}
                         <li>
                             <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
+                                {/* Utilise la traduction pour le bouton "Download" */}
+                                {t('download_button')}
                             </Link>
                         </li>
                     </ul>
@@ -59,7 +80,7 @@ const Header: React.FC = () => {
                             ) : (
                                 <HiBars3 className="h-6 w-6" aria-hidden="true" />
                             )}
-                            <span className="sr-only">Toggle navigation</span>
+                            <span className="sr-only">Toggle navigation</span> {/* Si vous voulez traduire, ajoutez une clé */}
                         </button>
                     </div>
                 </nav>
@@ -86,7 +107,8 @@ const Header: React.FC = () => {
                         ))}
                         <li>
                             <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
+                                {/* Utilise la traduction pour le bouton "Get Started" mobile */}
+                                {t('get_started_button')}
                             </Link>
                         </li>
                     </ul>

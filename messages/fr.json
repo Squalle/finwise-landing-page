@@ -1,0 +1,185 @@
+{
+  "testMessage": "Ça fonctionne !",
+  "common": {
+    "header": {
+      "menu": {
+        "features": "Nos solutions",
+        "pricing": "Nos offres",
+        "testimonials": "Avis de nos crèches"
+      },
+      "download_button": "Demander une démo",
+      "get_started_button": "Essai gratuit"
+    },
+    "footer": {
+      "subheading": "Procreche : Le partenaire technologique qui redonne du temps aux professionnels de la petite enfance.",
+      "quickLinks_title": "Accès direct",
+      "quickLinks": {
+        "features": "Nos solutions",
+        "pricing": "Nos offres",
+        "testimonials": "Avis de nos crèches"
+      },
+      "contact_title": "Contactez-nous",
+      "copyright_text": "© {year} {siteName}. Tous droits réservés.",
+      "made_by_text": "Conçu avec ❤️ pour les pros de la petite enfance. ",
+      "ui_kit_text": ""
+    },
+    "app_store_button": {
+      "prefix": "Télécharger sur",
+      "name": "l'App Store"
+    },
+    "play_store_button": {
+      "prefix": "DISPONIBLE SUR",
+      "name": "Google Play"
+    }
+  },
+  "benefits": {
+    "heading": "Des fonctionnalités pensées pour vous",
+    "items": [
+      {
+        "title": "Simplifiez votre quotidien, libérez votre temps",
+        "description": "Notre plateforme centralise toute votre administration. Fini la paperasse et les doubles saisies, bonjour l'efficacité.",
+        "bullets": [
+          {
+            "title": "Gestion des présences en un clic",
+            "description": "Les parents signalent les présences et absences depuis leur mobile. Les rapports sont générés automatiquement."
+          },
+          {
+            "title": "Facturation automatisée et paiements en ligne",
+            "description": "Générez et envoyez vos factures en quelques secondes. Offrez aux parents la simplicité du paiement en ligne."
+          }
+        ],
+        "image_alt": "Tableau de bord de gestion Procreche"
+      },
+      {
+        "title": "Renforcez le lien avec les parents",
+        "description": "Créez une relation de confiance inégalée grâce à une communication transparente, sécurisée et instantanée.",
+        "bullets": [
+          {
+            "title": "Transmissions quotidiennes numériques",
+            "description": "Partagez les repas, siestes et activités de la journée en temps réel via un fil d'actualité privé et sécurisé."
+          },
+          {
+            "title": "Messagerie instantanée et partage de photos",
+            "description": "Communiquez facilement et partagez les moments précieux en toute sécurité, directement dans l'application."
+          }
+        ],
+        "image_alt": "Interface de communication parents-crèche"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Prêt(e) à transformer la gestion de votre crèche ?",
+    "subheading": "Rejoignez les centaines de directeurs et directrices qui ont déjà choisi la sérénité. Demandez votre démo personnalisée.",
+    "get_started_button": "Commencer mon essai gratuit de 14 jours"
+  },
+  "faq": {
+    "title": "Vos questions, nos réponses",
+    "subtitle": "Tout ce que vous devez savoir sur Procreche.",
+    "items": [
+      {
+        "question": "L'application est-elle facile à utiliser pour mon équipe ?",
+        "answer": "Absolument. Procreche a été co-conçu avec des professionnels de la petite enfance. L'interface est intuitive et une formation de 30 minutes suffit pour une prise en main complète. Nos clients sont souvent surpris de la rapidité d'adoption par leurs équipes."
+      },
+      {
+        "question": "La sécurité des données des enfants est-elle garantie ?",
+        "answer": "C'est notre priorité absolue. Nous utilisons un chiffrement de niveau bancaire et nos serveurs sont hébergés en France. Vous restez l'unique propriétaire de vos données, conformément au RGPD."
+      },
+      {
+        "question": "Dois-je m'engager sur une longue durée ?",
+        "answer": "Non, nos abonnements sont flexibles et sans engagement de durée. Vous pouvez commencer avec notre essai gratuit de 14 jours, sans carte de crédit, et voir par vous-même la valeur que nous apportons."
+      }
+    ]
+  },
+  "hero": {
+    "heading": "La gestion de crèche, enfin simplifiée.",
+    "subheading": "Libérez-vous de l'administratif. Redécouvrez le plaisir de vous consacrer à l'essentiel : les enfants.",
+    "alt_image": "Application Procreche sur un smartphone"
+  },
+  "logos": {
+    "trusted_by_text": "Rejoignez plus de {customersCount} crèches qui nous font confiance au quotidien"
+  },
+  "metadata": {
+    "title": "Procreche | Le Logiciel de Gestion pour Crèches et Micro-crèches",
+    "description": "Simplifiez la facturation, la communication parents, les plannings et la conformité. Gagnez du temps et améliorez l'accueil avec Procreche."
+  },
+  "pricing": {
+    "title": "Des offres adaptées à chaque taille de crèche",
+    "description": "Choisissez le plan qui correspond à vos besoins et commencez à transformer votre gestion dès aujourd'hui.",
+    "plans": [
+      {
+        "name": "Essentiel",
+        "price": 49,
+        "features": [
+          "Gestion jusqu'à 20 enfants",
+          "Transmissions quotidiennes",
+          "Messagerie parents",
+          "Gestion des présences"
+        ]
+      },
+      {
+        "name": "Sérénité",
+        "price": 89,
+        "features": [
+          "Enfants illimités",
+          "Facturation automatisée",
+          "Paiement en ligne",
+          "Support prioritaire",
+          "Rapports d'activité"
+        ]
+      },
+      {
+        "name": "Partenaire",
+        "price": "Sur mesure",
+        "features": [
+          "Tout de l'offre Sérénité, plus :",
+          "Gestion multi-établissements",
+          "Exports comptables personnalisés",
+          "Accompagnement dédié",
+          "Développements sur mesure"
+        ]
+      }
+    ],
+    "custom_price_text": "Nous Contacter",
+    "per_month": "/mois",
+    "button_text": "Choisir ce plan",
+    "section_features_title": "INCLUS DANS CHAQUE OFFRE",
+    "features_subtitle": "Tout de l'offre précédente, plus..."
+  },
+  "stats": {
+    "items": [
+      {
+        "title": "8 heures/semaine économisées",
+        "description": "C'est le temps administratif moyen que nos crèches partenaires déclarent gagner chaque semaine. Du temps réinvesti auprès des enfants et des équipes."
+      },
+      {
+        "title": "98% de satisfaction parents",
+        "description": "Les familles adorent la transparence et la simplicité de notre application. Un vrai plus pour l'image et l'attractivité de votre établissement."
+      },
+      {
+        "title": "Conformité garantie",
+        "description": "Nos rapports et exports sont conçus pour répondre aux exigences de la CAF et de la PMI, vous assurant une tranquillité d'esprit permanente."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ce que nos crèches partenaires disent de nous",
+    "description": "Découvrez les témoignages de directeurs et d'équipes qui ont transformé leur quotidien avec Procreche.",
+    "items": [
+      {
+        "name": "Sophie Martin",
+        "role": "Directrice, Crèche 'Les Petits Pas'",
+        "message": "Depuis que nous utilisons {siteName}, la communication avec les parents n'a jamais été aussi fluide. Ils se sentent rassurés et impliqués. L'outil nous a libérés d'une charge mentale incroyable."
+      },
+      {
+        "name": "Karim Dubois",
+        "role": "Gestionnaire, Micro-crèche 'Le Cocon'",
+        "message": "La facturation était mon cauchemar mensuel. Avec {siteName}, c'est réglé en 15 minutes. C'est simple, fiable, et le support est ultra-réactif. Je ne pourrais plus revenir en arrière."
+      },
+      {
+        "name": "Aline Bernard",
+        "role": "Éducatrice de Jeunes Enfants",
+        "message": "J'avais peur que le numérique prenne le pas sur l'humain, mais c'est tout l'inverse. Je passe moins de temps sur les fiches et plus de temps à jouer et interagir avec les enfants. C'est un vrai bonheur."
+      }
+    ]
+  }
+}

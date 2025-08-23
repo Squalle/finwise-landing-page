@@ -1,9 +1,15 @@
+"use client"
+
 import React from 'react'
 import clsx from 'clsx'
+import { useTranslations } from 'next-intl';
 
 import { ctaDetails } from '@/data/cta'
 
 const AppStoreButton = ({ dark }: { dark?: boolean }) => {
+    // Récupère les traductions pour le bouton de l'App Store
+    const t = useTranslations('common.app_store_button');
+
     return (
         <a href={ctaDetails.appStoreUrl}>
             <button
@@ -18,10 +24,10 @@ const AppStoreButton = ({ dark }: { dark?: boolean }) => {
                 </div>
                 <div>
                     <div className="text-xs">
-                        Download on the
+                        {t('prefix')}
                     </div>
                     <div className="-mt-1 font-sans text-xl font-semibold">
-                        App Store
+                        {t('name')}
                     </div>
                 </div>
             </button>

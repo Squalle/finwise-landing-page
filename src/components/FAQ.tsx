@@ -1,27 +1,34 @@
 "use client"
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { BiMinus, BiPlus } from "react-icons/bi";
+import { useTranslations } from "next-intl";
+import { IFAQ } from "@/types"; // Importez votre interface IFAQ
 
 import SectionTitle from "./SectionTitle";
-import { faqs } from "@/data/faq";
 
 const FAQ: React.FC = () => {
+    // Récupère les traductions pour la section FAQ
+    const t = useTranslations('faq');
+
+    // Applique le type IFAQ[] pour que TypeScript sache de quoi il s'agit.
+    const faqItems: IFAQ[] = t.raw('items');
+
     return (
         <section id="faq" className="py-10 lg:py-20">
             <div className="flex flex-col lg:flex-row gap-10">
                 <div className="">
                     <p className="hidden lg:block text-foreground-accent">FAQ&apos;S</p>
                     <SectionTitle>
-                        <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">Frequently Asked Questions</h2>
+                        <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">{t('title')}</h2>
                     </SectionTitle>
                     <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
-                        Ask us anything!
+                        {t('subtitle')}
                     </p>
                     <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">help@finwise.com</a>
                 </div>
 
                 <div className="w-full lg:max-w-2xl mx-auto border-b">
-                    {faqs.map((faq, index) => (
+                    {faqItems.map((faq, index) => (
                         <div key={index} className="mb-7">
                             <Disclosure>
                                 {({ open }) => (

@@ -1,7 +1,20 @@
+"use client";
+
+import React from 'react';
+import { useTranslations } from 'next-intl';
+
 const Logos: React.FC = () => {
+    // Récupère les traductions pour la section 'logos'
+    const t = useTranslations('logos');
+
+    const customersCount = "2000+"; // Une donnée statique, mais elle pourrait venir d'une API
+
     return (
         <section id="logos" className="py-32 px-5 bg-background">
-            <p className="text-lg font-medium text-center">Trusted by <span className="text-secondary">2000+</span> customers worldwide</p>
+            <p className="text-lg font-medium text-center">
+                {/* Remplace le texte et injecte le nombre de clients */}
+                {t('trusted_by_text', { customersCount: customersCount })}
+            </p>
             <div className="mt-5 w-full flex flex-wrap flex-row items-center justify-evenly gap-5 sm:gap-10 opacity-45 logos-container">
                 {/* Notion */}
                 <svg width="129" height="48" viewBox="0 0 129 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5/6">

@@ -1,18 +1,22 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
-import { testimonials } from '@/data/testimonials';
+import { useTranslations } from 'next-intl';
+import { ITestimonial } from '@/types';
+import { siteDetails } from '@/data/siteDetails';
 
 const Testimonials: React.FC = () => {
+    const t = useTranslations('testimonials');
+    const testimonialsData: ITestimonial[] = t.raw('items');
+
     return (
         <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
-            {testimonials.map((testimonial, index) => (
-                <div
-                    key={index}
-                    className=""
-                >
+            {testimonialsData.map((testimonial, index) => (
+                <div key={index}>
                     <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
                         <Image
-                            src={testimonial.avatar}
+                            src={`/images/testimonial-${index + 1}.webp`}
                             alt={`${testimonial.name} avatar`}
                             width={50}
                             height={50}
@@ -23,7 +27,10 @@ const Testimonials: React.FC = () => {
                             <p className="text-sm text-foreground-accent">{testimonial.role}</p>
                         </div>
                     </div>
-                    <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p>
+                    {/* --- CORRECTION ICI --- */}
+                    <p className="text-foreground-accent text-center lg:text-left">
+                        &quot;{testimonial.message.replace('{siteName}', siteDetails.siteName)}&quot;
+                    </p>
                 </div>
             ))}
         </div>
