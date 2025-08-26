@@ -1,5 +1,21 @@
 {
   "testMessage": "¡Está funcionando!",
+  "form": {
+    "demo_title": "Solicitar una demo",
+    "demo_subtitle": "Déjanos tus datos y nuestro equipo se pondrá en contacto para programar una demostración personalizada.",
+    "firstname_label": "Nombre",
+    "name_label": "Apellido",
+    "email_label": "Email profesional",
+    "phone_label": "Número de teléfono",
+    "company_label": "Nombre de la guardería / empresa",
+    "cancel_button": "Cancelar",
+    "submit_button": "Enviar solicitud",
+    "submitting_button": "Enviando...",
+    "success_title": "¡Gracias!",
+    "success_message": "Hemos recibido tu solicitud. Nuestro equipo te contactará muy pronto.",
+    "close_button": "Cerrar",
+    "error_message": "Ha ocurrido un error. Por favor, inténtalo de nuevo."
+  },
   "common": {
     "header": {
       "menu": {

@@ -7,7 +7,7 @@ export const footerData: {
     telephone: string;
     socials: ISocials;
 } = {
-    email: 'address@yoursite.com',
+    email: 'info@procreche.com',
     telephone: '+1 (123) 456-7890',
     socials: {
         twitter: 'https://twitter.com/Twitter',

@@ -1,5 +1,21 @@
 {
   "testMessage": "Ça fonctionne !",
+  "form": {
+    "demo_title": "Demander une démo",
+    "demo_subtitle": "Laissez-nous vos coordonnées et notre équipe vous contactera.",
+    "firstname_label": "Prénom",
+    "name_label": "Nom de famille",
+    "email_label": "Email professionnel",
+    "phone_label": "Numéro de téléphone",
+    "company_label": "Nom de la crèche / entreprise",
+    "cancel_button": "Annuler",
+    "submit_button": "Envoyer la demande",
+    "submitting_button": "Envoi en cours...",
+    "success_title": "Merci !",
+    "success_message": "Votre demande a bien été reçue. Notre équipe vous contactera très prochainement.",
+    "close_button": "Fermer",
+    "error_message": "Une erreur est survenue. Veuillez réessayer."
+  },
   "common": {
     "header": {
       "menu": {

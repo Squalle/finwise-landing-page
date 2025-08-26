@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
                 </p>
                 <p className="text-sm mt-2 text-gray-500">
                     {t('made_by_text')}
-                    <a href="https://nexilaunch.com" target="_blank" rel="noopener noreferrer">Nexi Launch</a>
+                    <a href="https://procreche.com" target="_blank" rel="noopener noreferrer">PROCRECHE SOLUTIONS</a>
                 </p>
                 <p className="text-sm mt-2 text-gray-500">
                     {t('ui_kit_text')}

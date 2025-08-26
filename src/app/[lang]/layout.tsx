@@ -10,70 +10,41 @@ import { locales, type Locale } from '../../i18n';
 import { notFound } from 'next/navigation';
 
 import Header from '@/components/Header';
-// <-- 1. IMPORT DU FOOTER AJOUTÉ
 import Footer from '@/components/Footer';
+// 1. Importer le Provider ET la Modale
+import { ModalProvider } from '@/context/ModalContext';
+import DemoRequestModal from '@/components/DemoRequestModal';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export async function generateMetadata({
-                                           params: { lang }
-                                       }: {
-    params: { lang: Locale }
-}): Promise<Metadata> {
+// (La fonction generateMetadata ne change pas)
+export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
     const t = await getTranslations({ locale: lang, namespace: 'metadata' });
-
     return {
         title: t('title'),
         description: t('description'),
     };
 }
 
-export default async function LocaleLayout({
-                                               children,
-                                               params: { lang }
-                                           }: {
-    children: React.ReactNode;
-    params: { lang: Locale };
-}) {
+export default async function LocaleLayout({ children, params: { lang } }: { children: React.ReactNode; params: { lang: Locale }; }) {
     if (!locales.includes(lang)) {
         notFound();
     }
-
-    let messages;
-    try {
-        messages = await getMessages();
-        // --- NOTRE ESPION ---
-        // Affiche les messages chargés dans le terminal du serveur.
-        console.log(`[Layout pour "${lang}"] Messages chargés avec succès.`);
-
-    } catch (error) {
-        // S'il y a une erreur ici, on la verra clairement.
-        console.error(`[Layout pour "${lang}"] ERREUR CRITIQUE: Impossible de charger les messages !`, error);
-    }
-
-    // Si les messages n'ont pas pu être chargés, on affiche un message d'erreur clair
-    // au lieu de planter l'application.
-    if (!messages) {
-        return (
-            <html lang={lang}>
-            <body>
-            <h1>Erreur de chargement des traductions.</h1>
-            <p>Veuillez vérifier la console du terminal où `npm run dev` est lancé.</p>
-            </body>
-            </html>
-        );
-    }
+    const messages = await getMessages();
 
     return (
         <html lang={lang}>
         <body className={inter.className}>
         <NextIntlClientProvider locale={lang} messages={messages}>
-            <Header />
+            {/* 2. Le Provider enveloppe tout */}
+            <ModalProvider>
+                <Header />
+                <main>{children}</main>
+                <Footer />
 
-            <main>{children}</main>
-
-            {/* <-- 2. COMPOSANT FOOTER AJOUTÉ */}
-            <Footer />
+                {/* 3. La modale est rendue ici. Elle s'affichera quand l'état changera. */}
+                <DemoRequestModal />
+            </ModalProvider>
         </NextIntlClientProvider>
         </body>
         </html>

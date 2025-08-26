@@ -1,5 +1,21 @@
 {
   "testMessage": "It's working!",
+  "form": {
+    "demo_title": "Request a Demo",
+    "demo_subtitle": "Leave your contact details and our team will get in touch to schedule a personalized demonstration.",
+    "firstname_label": "First Name",
+    "name_label": "Last Name",
+    "email_label": "Work Email",
+    "phone_label": "Phone Number",
+    "company_label": "Daycare / Company Name",
+    "cancel_button": "Cancel",
+    "submit_button": "Send Request",
+    "submitting_button": "Sending...",
+    "success_title": "Thank You!",
+    "success_message": "Your request has been received. Our team will contact you very soon.",
+    "close_button": "Close",
+    "error_message": "An error occurred. Please try again."
+  },
   "common": {
     "header": {
       "menu": {

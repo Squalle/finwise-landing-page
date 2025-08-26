@@ -1,3 +1,4 @@
+// src/components/Header.tsx
 'use client';
 
 import Link from 'next/link';
@@ -5,43 +6,33 @@ import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import { FaFingerprint } from 'react-icons/fa';
-import { useTranslations } from 'next-intl'; // Importez le hook de traduction
-
+import { useTranslations } from 'next-intl';
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
-// Supprimez l'importation de '@/data/menuItems' car nous allons le créer dynamiquement
+
+// On importe notre hook personnalisé `useModal`
+import { useModal } from '@/context/ModalContext';
 
 const Header: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    // Récupère les traductions pour la section 'header' dans common.json
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const t = useTranslations('common.header');
-    const tMenu = useTranslations('common.header.menu'); // Scope spécifique pour le menu
+    const tMenu = useTranslations('common.header.menu');
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    // On récupère la fonction pour ouvrir la modale depuis le contexte partagé
+    const { openModal } = useModal();
 
-    // Définissez les éléments du menu en utilisant les traductions
+    const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
     const menuItems = [
-        {
-            text: tMenu('features'),
-            url: "#features"
-        },
-        {
-            text: tMenu('pricing'),
-            url: "#pricing"
-        },
-        {
-            text: tMenu('testimonials'),
-            url: "#testimonials"
-        }
+        { text: tMenu('features'), url: "#features" },
+        { text: tMenu('pricing'), url: "#pricing" },
+        { text: tMenu('testimonials'), url: "#testimonials" }
     ];
 
     return (
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
-                    {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
@@ -49,8 +40,7 @@ const Header: React.FC = () => {
                         </span>
                     </Link>
 
-                    {/* Desktop Menu */}
-                    <ul className="hidden md:flex space-x-6">
+                    <ul className="hidden md:flex space-x-6 items-center">
                         {menuItems.map(item => (
                             <li key={item.text}>
                                 <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
@@ -59,36 +49,33 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                {/* Utilise la traduction pour le bouton "Download" */}
+                            <button
+                                type="button"
+                                onClick={openModal} // On utilise la fonction du contexte ici
+                                className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"
+                            >
                                 {t('download_button')}
-                            </Link>
+                            </button>
                         </li>
                     </ul>
 
-                    {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center">
                         <button
-                            onClick={toggleMenu}
+                            onClick={toggleMobileMenu}
                             type="button"
                             className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
                             aria-controls="mobile-menu"
-                            aria-expanded={isOpen}
+                            aria-expanded={isMobileMenuOpen}
                         >
-                            {isOpen ? (
-                                <HiOutlineXMark className="h-6 w-6" aria-hidden="true" />
-                            ) : (
-                                <HiBars3 className="h-6 w-6" aria-hidden="true" />
-                            )}
-                            <span className="sr-only">Toggle navigation</span> {/* Si vous voulez traduire, ajoutez une clé */}
+                            {isMobileMenuOpen ? <HiOutlineXMark className="h-6 w-6" /> : <HiBars3 className="h-6 w-6" />}
+                            <span className="sr-only">Toggle navigation</span>
                         </button>
                     </div>
                 </nav>
             </Container>
 
-            {/* Mobile Menu with Transition */}
             <Transition
-                show={isOpen}
+                show={isMobileMenuOpen}
                 enter="transition ease-out duration-200 transform"
                 enterFrom="opacity-0 scale-95"
                 enterTo="opacity-100 scale-100"
@@ -100,16 +87,22 @@ const Header: React.FC = () => {
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
+                                <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMobileMenu}>
                                     {item.text}
                                 </Link>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                {/* Utilise la traduction pour le bouton "Get Started" mobile */}
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    openModal();
+                                    toggleMobileMenu();
+                                }}
+                                className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
+                            >
                                 {t('get_started_button')}
-                            </Link>
+                            </button>
                         </li>
                     </ul>
                 </div>
