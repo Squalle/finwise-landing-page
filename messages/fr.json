@@ -52,31 +52,31 @@
     "heading": "Des fonctionnalités pensées pour vous",
     "items": [
       {
-        "title": "Simplifiez votre quotidien, libérez votre temps",
-        "description": "Notre plateforme centralise toute votre administration. Fini la paperasse et les doubles saisies, bonjour l'efficacité.",
+        "title": "Plus qu'une communication, une connexion.",
+        "description": "Notre plateforme centralise toute votre communication. Fini les cahiers en papier égarés et les transmissions oubliées, bonjour la tranquillité pour votre équipe et les parents.",
         "bullets": [
           {
-            "title": "Gestion des présences en un clic",
-            "description": "Les parents signalent les présences et absences depuis leur mobile. Les rapports sont générés automatiquement."
+            "title": "Transmissions riches en quelques instants",
+            "description": " Enregistrez facilement les repas, siestes, changes et activités sur une tablette pour un suivi détaillé que les parents adorent."
           },
           {
-            "title": "Facturation automatisée et paiements en ligne",
-            "description": "Générez et envoyez vos factures en quelques secondes. Offrez aux parents la simplicité du paiement en ligne."
+            "title": "Fil d'actualité privé et sécurisé",
+            "description": "Partagez les moments précieux de la journée (photos, vidéos) pour rassurer les familles et valoriser votre projet pédagogique."
           }
         ],
         "image_alt": "Tableau de bord de gestion Procreche"
       },
       {
-        "title": "Renforcez le lien avec les parents",
-        "description": "Créez une relation de confiance inégalée grâce à une communication transparente, sécurisée et instantanée.",
+        "title": "Un projet éducatif enrichi, un tremplin vers la maternelle.",
+        "description": "Procrèche est votre allié pour accompagner le développement des plus grands et valoriser votre savoir-faire pédagogique.",
         "bullets": [
           {
-            "title": "Transmissions quotidiennes numériques",
-            "description": "Partagez les repas, siestes et activités de la journée en temps réel via un fil d'actualité privé et sécurisé."
+            "title": "Suivi des compétences clés",
+            "description": "Suivez les progrès de chaque enfant (motricité, langage, autonomie) et construisez un dossier solide pour préparer en douceur son passage à l'école."
           },
           {
-            "title": "Messagerie instantanée et partage de photos",
-            "description": "Communiquez facilement et partagez les moments précieux en toute sécurité, directement dans l'application."
+            "title": "Le portfolio numérique de l'enfant",
+            "description": "Rassemblez les photos des créations, les dessins et les anecdotes marquantes de chaque enfant dans son \"cahier de vie\" numérique. C'est un souvenir précieux pour les familles et un excellent support pour illustrer son évolution."
           }
         ],
         "image_alt": "Interface de communication parents-crèche"
@@ -107,26 +107,26 @@
     ]
   },
   "hero": {
-    "heading": "La gestion de crèche, enfin simplifiée.",
-    "subheading": "Libérez-vous de l'administratif. Redécouvrez le plaisir de vous consacrer à l'essentiel : les enfants.",
+    "heading": "Moins de paperasse, plus de temps pour leurs sourires.",
+    "subheading": "Procrèche automatise vos tâches administratives (communication, pointage, facturation) pour que vous puissiez vous consacrer à ce qui compte vraiment.",
     "alt_image": "Application Procreche sur un smartphone"
   },
   "logos": {
-    "trusted_by_text": "Rejoignez plus de {customersCount} crèches qui nous font confiance au quotidien"
+    "trusted_by_text": "La satisfaction de nos crèches partenaires, notre plus belle réussite."
   },
   "metadata": {
     "title": "Procreche | Le Logiciel de Gestion pour Crèches et Micro-crèches",
     "description": "Simplifiez la facturation, la communication parents, les plannings et la conformité. Gagnez du temps et améliorez l'accueil avec Procreche."
   },
   "pricing": {
-    "title": "Des offres adaptées à chaque taille de crèche",
-    "description": "Choisissez le plan qui correspond à vos besoins et commencez à transformer votre gestion dès aujourd'hui.",
+    "title": "Une tarification simple et transparente.",
+    "description": "Pas de frais cachés, pas de surprises. Choisissez la formule qui vous convient et commencez à vous simplifier la vie dès aujourd'hui.",
     "plans": [
       {
         "name": "Essentiel",
-        "price": 49,
+        "price": "Free",
         "features": [
-          "Gestion jusqu'à 20 enfants",
+          "Gestion jusqu'à 10 enfants",
           "Transmissions quotidiennes",
           "Messagerie parents",
           "Gestion des présences"
@@ -137,10 +137,10 @@
         "price": 89,
         "features": [
           "Enfants illimités",
+          "Photos et vidéo",
           "Facturation automatisée",
-          "Paiement en ligne",
-          "Support prioritaire",
-          "Rapports d'activité"
+          "Gestion des demandes d'admissions",
+          "Support prioritaire"
         ]
       },
       {
@@ -178,13 +178,13 @@
     ]
   },
   "testimonials": {
-    "title": "Ce que nos crèches partenaires disent de nous",
-    "description": "Découvrez les témoignages de directeurs et d'équipes qui ont transformé leur quotidien avec Procreche.",
+    "title": "\"Ça a vraiment simplifié notre quotidien.\"",
+    "description": "Ce ne sont pas nos mots, mais ceux des directrices et des équipes qui utilisent Procrèche chaque jour. Découvrez leurs témoignages.",
     "items": [
       {
         "name": "Sophie Martin",
         "role": "Directrice, Crèche 'Les Petits Pas'",
-        "message": "Depuis que nous utilisons {siteName}, la communication avec les parents n'a jamais été aussi fluide. Ils se sentent rassurés et impliqués. L'outil nous a libérés d'une charge mentale incroyable."
+        "message": "Depuis que nous utilisons l'application {siteName}, la communication avec les parents n'a jamais été aussi fluide. Ils se sentent rassurés, impliqués, et nous disent être ravis de ce lien privilégié. C'est un vrai soulagement pour toute l'équipe."
       },
       {
         "name": "Karim Dubois",

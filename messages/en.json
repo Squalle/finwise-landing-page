@@ -2,17 +2,17 @@
   "testMessage": "It's working!",
   "form": {
     "demo_title": "Request a Demo",
-    "demo_subtitle": "Leave your contact details and our team will get in touch to schedule a personalized demonstration.",
+    "demo_subtitle": "Leave us your details and our team will get in touch with you.",
     "firstname_label": "First Name",
     "name_label": "Last Name",
     "email_label": "Work Email",
     "phone_label": "Phone Number",
-    "company_label": "Daycare / Company Name",
+    "company_label": "Nursery / Company Name",
     "cancel_button": "Cancel",
     "submit_button": "Send Request",
     "submitting_button": "Sending...",
     "success_title": "Thank You!",
-    "success_message": "Your request has been received. Our team will contact you very soon.",
+    "success_message": "Your request has been received. Our team will contact you shortly.",
     "close_button": "Close",
     "error_message": "An error occurred. Please try again."
   },
@@ -21,7 +21,7 @@
       "menu": {
         "features": "Our Solutions",
         "pricing": "Our Plans",
-        "testimonials": "Testimonials"
+        "testimonials": "Our Nurseries' Reviews"
       },
       "download_button": "Request a Demo",
       "get_started_button": "Free Trial"
@@ -32,7 +32,7 @@
       "quickLinks": {
         "features": "Our Solutions",
         "pricing": "Our Plans",
-        "testimonials": "Testimonials"
+        "testimonials": "Our Nurseries' Reviews"
       },
       "contact_title": "Contact Us",
       "copyright_text": "© {year} {siteName}. All rights reserved.",
@@ -49,152 +49,152 @@
     }
   },
   "benefits": {
-    "heading": "Features Designed for You",
+    "heading": "Features designed for you",
     "items": [
       {
-        "title": "Simplify Your Daily Routine, Free Up Your Time",
-        "description": "Our platform centralizes all your administrative work. Say goodbye to paperwork and double-entry, and hello to efficiency.",
+        "title": "More than communication, a connection.",
+        "description": "Our platform centralizes all your communication. Goodbye to lost paper notebooks and forgotten handovers, hello to peace of mind for your team and parents.",
         "bullets": [
           {
-            "title": "One-Click Attendance Tracking",
-            "description": "Parents report attendance and absences from their mobile. Reports are generated automatically."
+            "title": "Rich daily reports in moments",
+            "description": "Easily log meals, naps, changes, and activities on a tablet for a detailed follow-up that parents love."
           },
           {
-            "title": "Automated Billing and Online Payments",
-            "description": "Generate and send your invoices in seconds. Offer parents the simplicity of online payments."
+            "title": "Private and secure news feed",
+            "description": "Share precious moments of the day (photos, videos) to reassure families and showcase your pedagogical project."
           }
         ],
-        "image_alt": "Procreche management dashboard"
+        "image_alt": "Procreche Management Dashboard"
       },
       {
-        "title": "Strengthen the Bond with Parents",
-        "description": "Build unparalleled trust through transparent, secure, and instant communication.",
+        "title": "An enriched educational project, a springboard to school.",
+        "description": "Procreche is your ally in supporting the development of older children and highlighting your pedagogical expertise.",
         "bullets": [
           {
-            "title": "Digital Daily Reports",
-            "description": "Share meals, naps, and daily activities in real-time through a private and secure newsfeed."
+            "title": "Key skills tracking",
+            "description": "Easily track each child's progress (motor skills, language, autonomy) and build a solid file to ensure a smooth transition to school."
           },
           {
-            "title": "Instant Messaging and Photo Sharing",
-            "description": "Communicate easily and share precious moments securely, directly within the app."
+            "title": "The child's digital portfolio",
+            "description": "Gather photos of creations, drawings, and memorable anecdotes for each child in their digital 'life book'. A precious memory for families and a great tool to illustrate their growth."
           }
         ],
-        "image_alt": "Parent-daycare communication interface"
+        "image_alt": "Parent-nursery communication interface"
       }
     ]
   },
   "cta": {
-    "heading": "Ready to transform your daycare management?",
-    "subheading": "Join hundreds of directors who have already chosen peace of mind. Request your personalized demo.",
+    "heading": "Ready to transform your nursery's management?",
+    "subheading": "Join the hundreds of directors who have already chosen peace of mind. Request your personalized demo.",
     "get_started_button": "Start my 14-day free trial"
   },
   "faq": {
-    "title": "Your Questions, Answered",
+    "title": "Your questions, our answers",
     "subtitle": "Everything you need to know about Procreche.",
     "items": [
       {
-        "question": "Is the application easy for my team to use?",
-        "answer": "Absolutely. Procreche was co-designed with early childhood professionals. The interface is intuitive, and a 30-minute training session is all it takes to get fully up and running. Our clients are often surprised by how quickly their teams adopt it."
+        "question": "Is the app easy for my team to use?",
+        "answer": "Absolutely. Procreche was co-designed with early childhood professionals. The interface is intuitive, and a 30-minute training is all it takes to get fully up to speed. Our clients are often surprised by how quickly their teams adopt it."
       },
       {
         "question": "Is the children's data security guaranteed?",
-        "answer": "It is our absolute priority. We use bank-level encryption and our servers are hosted in secure, compliant data centers. You remain the sole owner of your data, in accordance with GDPR."
+        "answer": "It's our top priority. We use bank-level encryption, and our servers are hosted in Europe. You remain the sole owner of your data, in compliance with GDPR."
       },
       {
-        "question": "Do I have to commit for a long period?",
-        "answer": "No, our subscriptions are flexible with no long-term commitment. You can start with our 14-day free trial, no credit card required, and see for yourself the value we provide."
+        "question": "Do I have to make a long-term commitment?",
+        "answer": "No, our subscriptions are flexible with no long-term commitment. You can start with our 14-day free trial, no credit card required, and see for yourself the value we bring."
       }
     ]
   },
   "hero": {
-    "heading": "Daycare management, finally simplified.",
-    "subheading": "Free yourself from administrative tasks. Rediscover the joy of focusing on what matters most: the children.",
-    "alt_image": "Procreche application on a smartphone"
+    "heading": "Less paperwork, more time for smiles.",
+    "subheading": "Procreche automates your administrative tasks (communication, attendance, billing) so you can focus on what truly matters.",
+    "alt_image": "Procreche app on a smartphone"
   },
   "logos": {
-    "trusted_by_text": "Join over {customersCount} daycares that trust us every day"
+    "trusted_by_text": "The satisfaction of our partner nurseries is our greatest achievement."
   },
   "metadata": {
-    "title": "Procreche | The Management Software for Daycares & Preschools",
-    "description": "Simplify billing, parent communication, scheduling, and compliance. Save time and enhance care with Procreche."
+    "title": "Procreche | Management Software for Nurseries & Childcare Centers",
+    "description": "Simplify billing, parent communication, scheduling, and compliance. Save time and improve care with Procreche."
   },
   "pricing": {
-    "title": "Plans Adapted for Every Daycare Size",
-    "description": "Choose the plan that fits your needs and start transforming your management today.",
+    "title": "Simple and transparent pricing.",
+    "description": "No hidden fees, no surprises. Choose the plan that's right for you and start simplifying your life today.",
     "plans": [
       {
         "name": "Essential",
-        "price": 49,
+        "price": "Free",
         "features": [
-          "Manage up to 20 children",
+          "Manage up to 10 children",
           "Daily reports",
           "Parent messaging",
           "Attendance tracking"
         ]
       },
       {
-        "name": "Professional",
+        "name": "Serenity",
         "price": 89,
         "features": [
           "Unlimited children",
+          "Photos and videos",
           "Automated billing",
-          "Online payments",
-          "Priority support",
-          "Activity reports"
+          "Admissions management",
+          "Priority support"
         ]
       },
       {
-        "name": "Enterprise",
+        "name": "Partner",
         "price": "Custom",
         "features": [
-          "Everything in Professional, plus:",
+          "Everything in Serenity, plus:",
           "Multi-center management",
           "Custom accounting exports",
-          "Dedicated account manager",
+          "Dedicated support",
           "Custom developments"
         ]
       }
     ],
     "custom_price_text": "Contact Us",
     "per_month": "/month",
-    "button_text": "Choose Plan",
+    "button_text": "Choose this plan",
     "section_features_title": "INCLUDED IN EVERY PLAN",
     "features_subtitle": "Everything in the previous plan, plus..."
   },
   "stats": {
     "items": [
       {
-        "title": "8 Hours/Week Saved",
-        "description": "The average administrative time our partner daycares report saving each week. Time that's reinvested with children and staff."
+        "title": "8 hours/week saved",
+        "description": "The average administrative time our partner nurseries report saving each week. Time that's reinvested in the children and the teams."
       },
       {
-        "title": "98% Parent Satisfaction",
-        "description": "Families love the transparency and simplicity of our application. A real asset for your center's image and appeal."
+        "title": "98% parent satisfaction",
+        "description": "Families love the transparency and simplicity of our app. A real boost for your center's image and attractiveness."
       },
       {
-        "title": "Compliance Guaranteed",
-        "description": "Our reports and exports are designed to meet regulatory requirements, ensuring you have permanent peace of mind."
+        "title": "Compliance guaranteed",
+        "description": "Our reports and exports are designed to meet regulatory requirements (e.g., for CAF/PMI in France), ensuring your complete peace of mind."
       }
     ]
   },
   "testimonials": {
-    "title": "What Our Partner Daycares Say About Us",
-    "description": "Read testimonials from directors and teams who have transformed their daily work with Procreche.",
+    "title": "\"It has truly simplified our daily routine.\"",
+    "description": "Those aren't our words, but the words of the directors and teams who use Procreche every day. Discover their stories.",
     "items": [
       {
         "name": "Sophie Martin",
-        "role": "Director, 'The Little Steps' Daycare",
-        "message": "Since we started using {siteName}, communication with parents has never been smoother. They feel reassured and involved. The tool has freed us from an incredible mental load."
+        "role": "Director, 'Les Petits Pas' Nursery",
+        "message": "Since we started using the {siteName} app, communication with parents has never been so smooth. They feel reassured, involved, and tell us they love this special connection. It's a real relief for the whole team."
       },
       {
         "name": "Karim Dubois",
-        "role": "Manager, 'The Cocoon' Preschool",
-        "message": "Billing was my monthly nightmare. With {siteName}, it's done in 15 minutes. It's simple, reliable, and the support is incredibly responsive. I could never go back."
+        "role": "Manager, 'Le Cocon' Childcare Center",
+        "message": "Billing was my monthly nightmare. With {siteName}, it's done in 15 minutes. It's simple, reliable, and the support is ultra-responsive. I could never go back."
       },
       {
         "name": "Aline Bernard",
         "role": "Early Childhood Educator",
-        "message": "I was afraid digital tools would take over the human element, but it's the complete opposite. I spend less time on paperwork and more time playing and interacting with the children. It's a real joy."
+        "message": "I was afraid that digital would replace the human touch, but it's the complete opposite. I spend less time on paperwork and more time playing and interacting with the children. It's a real joy."
       }
     ]
   }
