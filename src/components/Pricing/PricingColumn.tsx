@@ -1,3 +1,4 @@
+// src/components/Pricing/PricingColumn.tsx
 "use client";
 
 import React from 'react';
@@ -5,20 +6,17 @@ import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 import { IPricing } from "@/types";
-
-// MODIFICATION 1 : Importer notre hook useModal
 import { useModal } from '@/context/ModalContext';
 
 interface Props {
     tier: IPricing;
     highlight?: boolean;
     t: ReturnType<typeof useTranslations>;
+    index: number; // <-- On reçoit l'index
 }
 
-const PricingColumn: React.FC<Props> = ({ tier, highlight, t }: Props) => {
+const PricingColumn: React.FC<Props> = ({ tier, highlight, t, index }: Props) => {
     const { name, price, features } = tier;
-
-    // MODIFICATION 2 : Récupérer la fonction openModal depuis le contexte
     const { openModal } = useModal();
 
     return (
@@ -27,12 +25,19 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight, t }: Props) => {
                 <h3 className="text-2xl font-semibold mb-4">{name}</h3>
                 <p className="text-3xl md:text-5xl font-bold mb-6">
                     <span className={clsx({ "text-secondary": highlight })}>
-                        {typeof price === 'number' ? `$${price}` : t('custom_price_text')}
+                        {/* NOUVELLE LOGIQUE POUR LE PRIX */}
+                        {price === 'custom'
+                            ? t('custom_price_text')
+                            : price === 0
+                                ? t('free_text')
+                                : `$${price}`
+                        }
                     </span>
-                    {typeof price === 'number' && <span className="text-lg font-normal text-gray-600">{t('per_month')}</span>}
+                    {/* On n'affiche "/mois" que si le prix est un nombre supérieur à 0 */}
+                    {typeof price === 'number' && price > 0 && (
+                        <span className="text-lg font-normal text-gray-600">{t('per_month')}</span>
+                    )}
                 </p>
-
-                {/* MODIFICATION 3 : Ajouter l'événement onClick au bouton */}
                 <button
                     type="button"
                     onClick={openModal}
@@ -42,8 +47,13 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight, t }: Props) => {
                 </button>
             </div>
             <div className="p-6 mt-1">
-                <p className="font-bold mb-0">{t('section_features_title')}</p>
-                <p className="text-foreground-accent mb-5">{t('features_subtitle')}</p>
+                {/* ON AFFICHE CE TEXTE SEULEMENT SI CE N'EST PAS LE PREMIER PLAN */}
+                {index > 0 && (
+                    <>
+                        <p className="font-bold mb-0">{t('section_features_title')}</p>
+                        <p className="text-foreground-accent mb-5">{t('features_subtitle')}</p>
+                    </>
+                )}
                 <ul className="space-y-4 mb-8">
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-center">

@@ -124,7 +124,7 @@
     "plans": [
       {
         "name": "Essentiel",
-        "price": "Free",
+        "price": 0,
         "features": [
           "Gestion jusqu'à 10 enfants",
           "Transmissions quotidiennes",
@@ -147,9 +147,9 @@
         "name": "Partenaire",
         "price": "Sur mesure",
         "features": [
-          "Tout de l'offre Sérénité, plus :",
-          "Gestion multi-établissements",
-          "Exports comptables personnalisés",
+          "L'offre Sérénité, plus :",
+          "App au nom de votre crèche",
+          "Reporting personnalisés",
           "Accompagnement dédié",
           "Développements sur mesure"
         ]
